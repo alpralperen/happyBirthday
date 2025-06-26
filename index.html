@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECEM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome To Our Universe</h1>
+      <nav>
+        <a href="#" onclick="showSection('gezegenler')">Ece System</a>
+        <a href="#" onclick="showSection('timeline')">Time Capsule</a>
+      </nav>
+    </header>
+
+    <section id="gezegenler" class="active">
+      <div class="solar-system">
+        <div class="sun" onclick="openModal('sun')"></div>
+        <div
+          class="orbit"
+          style="width: 180px; height: 180px; animation-duration: 32s"
+        >
+          <div class="planet mercury" onclick="openModal('mercury')"></div>
+        </div>
+        <div
+          class="orbit"
+          style="width: 240px; height: 240px; animation-duration: 35s"
+        >
+          <div class="planet venus" onclick="openModal('venus')"></div>
+        </div>
+        <div
+          class="orbit"
+          style="width: 300px; height: 300px; animation-duration: 30s"
+        >
+          <div class="planet earth" onclick="openModal('earth')"></div>
+        </div>
+        <div
+          class="orbit"
+          style="width: 360px; height: 360px; animation-duration: 25s"
+        >
+          <div class="planet mars" onclick="openModal('mars')"></div>
+        </div>
+        <div
+          class="orbit"
+          style="width: 440px; height: 440px; animation-duration: 26s"
+        >
+          <div class="planet jupiter" onclick="openModal('jupiter')"></div>
+        </div>
+        <div
+          class="orbit"
+          style="width: 520px; height: 520px; animation-duration: 25s"
+        >
+          <div class="planet saturn" onclick="openModal('saturn')"></div>
+        </div>
+        <div
+          class="orbit"
+          style="width: 600px; height: 600px; animation-duration: 24s"
+        >
+          <div class="planet uranus" onclick="openModal('uranus')"></div>
+        </div>
+        <div
+          class="orbit"
+          style="width: 680px; height: 680px; animation-duration: 27s"
+        >
+          <div class="planet neptune" onclick="openModal('neptune')"></div>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div id="sun" class="modal">
+        <div class="modal-close" onclick="closeModal('sun')">X</div>
+        <img src="/assets/images/goz.jpg" />
+        <p>
+          Gözlerin… Bir bakışınla konuşmayı unuttum, her şeyi seninle öğrendim.
+          Bazen masum bir çocuk gibi, bazen sonsuzluk kadar derin. Sen bakınca
+          dünya susuyor, zaman duruyor ve sadece sen kalıyorsun içimde.
+          Gözlerin, benim en sevdiğim cümle. Bir bakışınla huzur buluyorum, bir
+          bakışınla yeniden aşık oluyorum.
+        </p>
+      </div>
+      <div id="mercury" class="modal">
+        <div class="modal-close" onclick="closeModal('mercury')">X</div>
+        <img src="/assets/images/el.jpg" />
+        <p>
+          El ele tutuştuğumuzda, kelimeler susar; 'yanındayım' der gözlerimiz.
+        </p>
+      </div>
+      <div id="venus" class="modal">
+        <div class="modal-close" onclick="closeModal('venus')">X</div>
+        <img src="/assets/images/eğlenceli.jpg" />
+        <p>Seninle çocuklaşmak, seninle büyümek... Sen, sen ve yine sen...</p>
+      </div>
+      <div id="earth" class="modal">
+        <div class="modal-close" onclick="closeModal('earth')">X</div>
+        <img src="/assets/images/sinir.jpg" />
+        <p>
+          Yalnız seni görmek için yaşıyorum desem, abartmış olurum... Nefes
+          falan da alıyorum çünkü.
+        </p>
+      </div>
+      <div id="mars" class="modal">
+        <div class="modal-close" onclick="closeModal('mars')">X</div>
+        <img src="/assets/images/öpücük.jpg" />
+        <p>
+          Ben sana teşekkür ederim, beni sen öptün,<br />
+          Ben uyurken benim alnımdan beni sen öptün;<br />
+          Serinlik verdin korulara, canlandı serçelerim; <br>
+          Sen mavi bir tilkiydin, binmiştin mavi ata,<br>
+          Ben belki dün ölmüştüm, belki de geçen hafta. <br><br>
+          Sen bana çok güzeldin, senin ayakların da.
+        </p>
+        </p>
+      </div>
+
+      <div id="jupiter" class="modal">
+        <div class="modal-close" onclick="closeModal('jupiter')">X</div>
+        <img src="/assets/images/yürüyüş.jpg" />
+        <p>Elini tuttuğumda yürümek değil, hayatın kendisi kolaylaşıyor.</p>
+      </div>
+      <div id="saturn" class="modal">
+        <div class="modal-close" onclick="closeModal('saturn')">X</div>
+        <img src="/assets/images/kruss.jpg" />
+        <p>
+          Dün seni sevdim, <br>
+          Bugün de seviyorum <br>
+          Öbür gün borcum olsun. <br>
+          Yaşarsam söz, yine seni seveceğim.
+        </p>
+      </div>
+      <div id="uranus" class="modal">
+        <div class="modal-close" onclick="closeModal('uranus')">X</div>
+        <img src="/assets/images/sinir2.jpg" />
+        <p>Bazı günler, bazı insanlar, bir sebeple, sahiden karşılaşır. Bazen bir tebessümde, bazen bir yazıda, bazen bir şiirde, bazen ortak bir düşüncede. Esasen hiçbir karşılaşma tesadüf değildir. Çünkü benzer ruhlar bir şekilde karşılaşırlar.</p>
+      </div>
+      <div id="neptune" class="modal">
+        <div class="modal-close" onclick="closeModal('neptune')">X</div>
+        <img src="/assets/images/gulus.jpg" />
+        <p>Sen güldüğün zaman şarkılar söylenir içimde. güller açar kediliğinden. Başlar gözlerimde bir renk cümbüşü, çimen yeşilinden, gök maviliğinden. <br> Sen güldüğün zaman; Güneşler batmayı bilmez. Yıldız tıldızdır gökyüzü. Bir kadın gitar çalar, en mutlu sesisyle söyler şarkımızı.</p>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <div class="timeline-slide">
+        <div class="content">
+          <h2>Tanıştığımız Gün</h2>
+          <img src="/assets/images/tanisma.png" alt="Tanışma" />
+          <p>Çantanız açık kalmış hanımefendi...</p>
+        </div>
+      </div>
+      <div class="timeline-slide">
+        <div class="content">
+          <h2>İlk Buluşma</h2>
+          <img src="/assets/images/ilk.jpg" alt="Tanışma" />
+          <p>
+            Bi kahve içicektik, konu nerelere geldi🙂 Haliyle ilk buluşmada
+            fotoğraf çekilmemişiz. İkinciyi koyuyorum. Zaten o hafta 3 kere
+            buluştuk hepsi ilk sayılır🥰
+          </p>
+        </div>
+      </div>
+      <div class="timeline-slide">
+        <div class="content">
+          <h2>İlk Piknik</h2>
+          <img src="/assets/images/piknik.jpg" alt="Tanışma" />
+          <p>
+            Oruk, biberli ve birbirine deliler gibi aşık olacağından habersiz
+            iki kişi.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-slide">
+        <div class="content">
+          <h2>06.07.2024</h2>
+          <p>
+            Henüz her şeyden habersiz, hayatımda ilk defa çiçek aldım ve
+            hoşlandığım kıza gidiyorum. Bu çiçekler soldukça içimde aşkın
+            yeşerdi.
+          </p>
+          <img src="assets/images/06.06.2024.jpg" alt="İlk Fotoğraf" />
+        </div>
+      </div>
+      <div class="timeline-slide">
+        <div class="content">
+          <h2>İlk Kahvaltı</h2>
+          <img src="assets/images/kahvaltı.jpg" alt="Bebeklik" />
+          <p>
+            Geçirdiğim en güzel gecenin ardından manazarası sen olduğun bi
+            kahvaltı...
+          </p>
+        </div>
+      </div>
+      <div class="timeline-slide">
+        <div class="content">
+          <h2>İlk Kardan Adam</h2>
+          <img src="assets/images/kar.jpg" alt="Bebeklik" />
+          <img src="assets/images/kar2.jpg" alt="Bebeklik" />
+          <p>
+            Ellerimiz dona dona yaptığımız kardan bebek. Bebeğimize pek iyi
+            bakamadık ama gerçeğini yapınca çok iyi bakıcaz😉
+          </p>
+        </div>
+      </div>
+      <div class="timeline-slide">
+        <div class="content">
+          <h2>Canım Sevgilim</h2>
+          <img src="assets/images/bebek.jpg" alt="Bebeklik" />
+          <p>
+            İyi ki doğdun bebeğim🎂 Benim yanımda sen, senin yüzünde gülüşler
+            hiç eksik olmasın. Seni çok seviyorum🤍🩷
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Muzik -->
+    <audio id="bg-music" src="assets/music/music.mp3" autoplay loop></audio>
+  </body>
+  <script src="script.js"></script>
+</html>
+<script>
+  const slides = document.querySelectorAll(".timeline-slide");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        } else {
+          entry.target.classList.remove("active");
+        }
+      });
+    },
+    {
+      threshold: 0.6, // Görüntünün %60'ı görünürse tetiklenir
+    }
+  );
+
+  slides.forEach((slide) => observer.observe(slide));
+</script>
